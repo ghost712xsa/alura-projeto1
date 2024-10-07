@@ -1,0 +1,68 @@
+.cabeçalho__menu-hamburguer {
+    width: 30px; /* Aumentei um pouco o tamanho */
+    height: 30px;
+    display: inline-block;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer; /* Adiciona um cursor de ponteiro */
+    transition: transform 0.2s;
+}
+
+.cabeçalho {
+    background-color: #FFFFFF; /* Branco */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em; /* Adicionando um padding ao cabeçalho */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 70vw; /* Aumentei a largura */
+    background-color: #FFFFFF; /* Branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para o menu */
+    z-index: 10; /* Para garantir que o menu fique acima de outros elementos */
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+}
+
+.lista-menu__titulo {
+    color: #FF6F61; /* Coral */
+    font-weight: 700;
+    border-bottom: 2px solid #D5006D; /* Linha inferior */
+}
+
+.lista-menu__link {
+    background: linear-gradient(90deg, #FF6F61, #D5006D); /* Gradiente em tons quentes */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    font-weight: 500; /* Adicionando peso à fonte */
+}
+
+.container__botao {
+    display: none; /* Mantido oculto para estilo de menu */
+}

@@ -1,0 +1,21 @@
+hr {
+    margin: 0;
+    border: 1px solid #FF6F61; /* Coral */
+    opacity: 0.5; /* Tornar a linha um pouco transparente */
+    margin-top: 1em; /* Espaço acima da linha */
+    margin-bottom: 1em; /* Espaço abaixo da linha */
+}
+
+.rodapé {
+    background-color: #FFFFFF; /* Branco */
+    padding: 2em; /* Aumentei o padding */
+    text-align: center; /* Centraliza o texto no rodapé */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave no rodapé */
+    position: relative; /* Para posicionar elementos filhos, se necessário */
+}
+
+.rodapé p {
+    color: #333; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte do texto */
+    margin: 0; /* Remove margens para um layout limpo */
+}

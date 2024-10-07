@@ -1,0 +1,100 @@
+.carrossel__titulo {
+    color: #FF5733; /* Coral */
+    background-color: #FFFFFF; /* Branco */
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 800;
+    padding: 1.5em 0 0.75em 0;
+    border-bottom: 3px solid #FF5733; /* Linha de separação */
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 10px; /* Arredondar bordas da imagem */
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF5733; /* Cor dos botões */
+    font-size: 24px;
+}
+
+.swiper-pagination {
+    position: relative;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.card {
+    background: #FFFFFF; /* Branco */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    margin: 1.5em;
+    padding: 1.5em;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+.card__descrição {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.card__botões {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botões {
+    display: flex;
+}
+
+.descrição__titulo {
+    color: #FF5733; /* Coral */
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.descrição__titulo-livro {
+    color: #3498DB; /* Azul Claro */
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0.75em 0;
+}
+
+.descrição__texto {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* Cor do texto */
+}
+
+.botões__ancora {
+    background-color: #FF5733; /* Coral */
+    padding: 1em 2.5em;
+    color: #FFFFFF; /* Branco */
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botões__ancora:hover {
+    background-color: #C0392B; /* Tom mais escuro de coral */
+}
+
+.botões__item {
+    margin: 0 0.75em;
+}

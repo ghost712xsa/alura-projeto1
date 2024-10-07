@@ -1,0 +1,52 @@
+.contato {
+    background-color: #FFFFFF; /* Branco */
+    padding: 2em;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contato__titulo,
+.contato__texto {
+    background: linear-gradient(90deg, #FF6F61, #D5006D); /* Gradiente em tons quentes */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+}
+
+.contato__titulo {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.contato__texto {
+    font-weight: 400;
+    margin: 1em 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.contato__email {
+    padding: 1em;
+    border: 2px solid #FF6F61; /* Coral */
+    border-radius: 30px;
+    width: 90%;
+    color: #FF6F61; /* Coral */
+    font-size: 16px;
+    transition: border-color 0.3s;
+    outline: none; /* Remove o contorno padrão */
+}
+
+.contato__email:focus {
+    border-color: #D5006D; /* Tom mais escuro de coral ao focar */
+}
+
+.contato__email::placeholder {
+    font-family: 'Roboto', sans-serif; /* Altere para a fonte desejada */
+    color: #FF6F61; /* Coral */
+    opacity: 0.7; /* Leve transparência para o placeholder */
+    background: url("../img/Email.svg") no-repeat 5%;
+    padding-left: 2.5em; /* Espaço para o ícone */
+}
